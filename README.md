@@ -7,9 +7,15 @@ Statyczna strona: jeden plik `index.html` plus obrazki. Nie wymaga budowania.
 ## Pliki
 
 - `index.html`: cała strona (PL/EN, ekran startowy, animacje, płatności)
-- `cover.jpg`: grafika wydarzenia
-- `og.jpg`: obrazek podglądu linku (Facebook, Messenger, WhatsApp)
-- `favicon.svg`: ikonka w karcie przeglądarki
+- `cover.jpg` (1800 px) i `cover-1200.jpg`: grafika wydarzenia; przeglądarka sama wybiera ostrzejszą wersję na ekranach retina
+- `og.jpg` (1200×630): obrazek podglądu linku (Facebook, Messenger, WhatsApp, Instagram)
+- `favicon.svg`, `apple-touch-icon.png`: ikonki w karcie przeglądarki i na ekranie iPhone'a
+- `vercel.json`: ustawienia cache dla Vercel
+
+## Podgląd linku na Facebooku
+
+Facebook zapamiętuje podgląd linku. Jeśli zobaczysz stary obrazek albo brak obrazka, wklej link na
+https://developers.facebook.com/tools/debug/ i kliknij „Scrape Again”.
 
 ## Jak zmienić liczbę wolnych miejsc
 

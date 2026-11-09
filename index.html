@@ -5,20 +5,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The Witchy Sewing Club · Andrzejki 28.11 · Shvoov Eco Deco</title>
 <meta name="description" content="Andrzejkowy wieczór tarota, tkanin i drobnych czarów w pracowni Shvoov Eco Deco w Warszawie. Sobota 28.11.2026, 18:00–21:00. Tylko 10 miejsc, bilet 129 zł.">
-<meta name="theme-color" content="#160f12">
+<meta name="theme-color" content="#140d10">
+<meta name="color-scheme" content="dark">
+<meta name="format-detection" content="telephone=no">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-<!-- Link previews (Facebook, Messenger, WhatsApp). After Vercel is live, you can swap the image URL for https://YOUR-DOMAIN/og.jpg -->
+<!-- Link previews: Facebook, Messenger, WhatsApp, Instagram DMs, iMessage, X.
+     The image URL must be absolute; it points at the copy on GitHub so it works on any domain.
+     Facebook caches previews: after changing the image, re-scrape at developers.facebook.com/tools/debug -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="The Witchy Sewing Club · Andrzejki 28.11">
-<meta property="og:description" content="Tarot, lanie wosku, szycie sakiewki-talizmanu. Sobota 28.11, 18:00–21:00, Shvoov Eco Deco, Warszawa. Tylko 10 miejsc.">
+<meta property="og:site_name" content="Shvoov Eco Deco">
+<meta property="og:title" content="The Witchy Sewing Club · Andrzejki 28.11 🌙">
+<meta property="og:description" content="Tarot, lanie wosku przez klucz i szycie sakiewki-talizmanu przy świecach. Sobota 28.11, 18:00–21:00, Warszawa. Tylko 10 miejsc · 129 zł.">
 <meta property="og:image" content="https://raw.githubusercontent.com/jmmichalczak-ctrl/JUSTYNA/main/og.jpg">
+<meta property="og:image:secure_url" content="https://raw.githubusercontent.com/jmmichalczak-ctrl/JUSTYNA/main/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="628">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Witchy Sewing Club: a crescent moon pierced by a needle, red thread leading to a velvet pouch. 28.11.2026, Warsaw.">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:locale:alternate" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Witchy Sewing Club · Andrzejki 28.11 🌙">
+<meta name="twitter:description" content="Tarot, wax, candlelight and a talisman pouch you sew yourself. Sat 28.11, 18:00–21:00, Warsaw. Only 10 spots.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/jmmichalczak-ctrl/JUSTYNA/main/og.jpg">
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "The Witchy Sewing Club · Andrzejki",
+  "description": "Andrzejkowy wieczór tarota, tkanin i drobnych czarów: tarot, lanie wosku, szycie sakiewki-talizmanu.",
+  "startDate": "2026-11-28T18:00:00+01:00",
+  "endDate": "2026-11-28T21:00:00+01:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": { "@type": "Place", "name": "Shvoov Eco Deco", "address": { "@type": "PostalAddress", "addressLocality": "Warszawa", "addressCountry": "PL" } },
+  "image": ["https://raw.githubusercontent.com/jmmichalczak-ctrl/JUSTYNA/main/og.jpg"],
+  "organizer": { "@type": "Organization", "name": "Shvoov Eco Deco" },
+  "offers": { "@type": "Offer", "price": "129", "priceCurrency": "PLN", "availability": "https://schema.org/LimitedAvailability" },
+  "maximumAttendeeCapacity": 10
+}
+</script>
+
+<link rel="preload" as="image" href="cover-1200.jpg" imagesrcset="cover-1200.jpg 1200w, cover.jpg 1800w" imagesizes="(max-width: 880px) 92vw, 520px">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Spectral:ital,wght@0,300;0,400;0,500;1,400&display=swap">
@@ -57,7 +88,7 @@
     color-scheme: dark;
   }
   *, *::before, *::after { box-sizing: border-box; }
-  html { background: var(--ink); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  html { background: var(--ink); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: transparent; }
   body {
     margin: 0;
     background: var(--ink);
@@ -84,7 +115,7 @@
       var(--ink);
   }
   .grain {
-    position: fixed; inset: -50%; z-index: 50; pointer-events: none; opacity: .07; mix-blend-mode: overlay;
+    position: fixed; inset: 0; z-index: 50; pointer-events: none; opacity: .045; transform: translateZ(0);
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
   }
   #dust { position: fixed; inset: 0; z-index: -1; pointer-events: none; width: 100%; height: 100%; }
@@ -162,7 +193,7 @@
 
   /* ---------- layout ---------- */
   .wrap { width: min(1080px, 100%); margin: 0 auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
-  section { position: relative; }
+  section { position: relative; scroll-margin-top: 64px; }
   .sec { padding-block: clamp(72px, 12vw, 130px); }
   .kicker { font-family: var(--caps); color: var(--brass); letter-spacing: .26em; font-size: 14px; display: flex; align-items: center; gap: 14px; margin: 0 0 14px; }
   .kicker::before { content: ""; width: 34px; height: 1px; background: var(--brass); }
@@ -175,7 +206,7 @@
   .center .lead { margin-inline: auto; }
 
   /* reveal on scroll */
-  .js .rv { opacity: 0; transform: translateY(28px); transition: opacity 1s var(--ease), transform 1s var(--ease); transition-delay: calc(var(--d, 0) * 110ms); }
+  .js .rv { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease), transform .9s var(--ease); transition-delay: calc(var(--d, 0) * 110ms); }
   .js .rv.in { opacity: 1; transform: none; }
 
   /* ---------- buttons ---------- */
@@ -209,6 +240,7 @@
     animation: shimmer 7s linear infinite;
   }
   .hero h1 .amp { color: var(--brass); }
+  @media (hover: none) { .hero h1 { animation: none; } }
   @keyframes shimmer { from { background-position: 130% 0; } to { background-position: -130% 0; } }
   .hero .lead { font-size: 19px; }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 22px 0 28px; padding: 0; list-style: none; }
@@ -221,7 +253,7 @@
     position: relative; transform-style: preserve-3d; transition: transform .6s var(--ease);
     border: 1px solid var(--brass); outline: 1px solid var(--brass); outline-offset: 6px;
     box-shadow: 0 30px 80px rgba(0, 0, 0, .6), 0 0 120px rgba(193, 61, 71, .12);
-    animation: float 7s ease-in-out infinite;
+    animation: float 7s ease-in-out infinite; will-change: transform;
   }
   .poster-card img { width: 100%; height: auto; aspect-ratio: 1600 / 837; object-fit: cover; }
   .poster-card .shine { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(500px circle at var(--mx, 50%) var(--my, 30%), rgba(255, 240, 210, .16), transparent 45%); mix-blend-mode: screen; }
@@ -260,7 +292,7 @@
 
   /* ---------- marquee ---------- */
   .marquee { border-block: 1px solid var(--line); overflow: hidden; padding: 16px 0; background: rgba(29, 20, 24, .5); }
-  .marquee-track { display: flex; gap: 40px; width: max-content; animation: marquee 38s linear infinite; font-family: var(--display); font-style: italic; font-size: clamp(22px, 3.4vw, 32px); color: var(--bone-dim); white-space: nowrap; }
+  .marquee-track { display: flex; gap: 40px; width: max-content; animation: marquee 38s linear infinite; font-family: var(--display); font-style: italic; font-size: clamp(22px, 3.4vw, 32px); color: var(--bone-dim); white-space: nowrap; will-change: transform; }
   .marquee-track span { display: flex; align-items: center; gap: 40px; }
   .marquee-track span::after { content: "✦"; font-style: normal; color: var(--brass); font-size: .6em; }
   @keyframes marquee { to { transform: translateX(-50%); } }
@@ -314,7 +346,7 @@
     transition: background .5s, color .5s, box-shadow .5s;
   }
   .step.lit .num { background: var(--velvet); box-shadow: 0 0 0 6px rgba(193, 61, 71, .12), 0 0 30px rgba(193, 61, 71, .35); }
-  .step-card { background: rgba(29, 20, 24, .78); border: 1px solid var(--line); padding: clamp(20px, 4vw, 32px); min-width: 0; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+  .step-card { background: rgba(29, 20, 24, .9); border: 1px solid var(--line); padding: clamp(20px, 4vw, 32px); min-width: 0; }
   .step-card h3 { font-family: var(--display); font-weight: 400; font-size: clamp(26px, 4vw, 32px); line-height: 1.15; margin: 4px 0 8px; }
   .step-card p { margin: 0 0 14px; color: var(--bone-dim); }
   .step-card p:last-child { margin-bottom: 0; }
@@ -544,7 +576,7 @@
 
       <div class="poster rv" style="--d:2">
         <div class="poster-card" id="poster">
-          <img src="cover.jpg" width="1600" height="837" fetchpriority="high" alt="The Witchy Sewing Club: a crescent moon pierced by a sewing needle, red thread leading to a velvet pouch and an old key">
+          <img src="cover-1200.jpg" srcset="cover-1200.jpg 1200w, cover.jpg 1800w" sizes="(max-width: 880px) 92vw, 520px" width="1800" height="942" fetchpriority="high" decoding="async" alt="The Witchy Sewing Club: a crescent moon pierced by a sewing needle, red thread leading to a velvet pouch and an old key">
           <div class="shine"></div>
         </div>
         <div class="poster-cap"><span>No. XXVIII</span><span>Shvoov Eco Deco</span><span>MMXXVI</span></div>
@@ -954,17 +986,27 @@
   /* ---------- poster tilt + cursor glow (mouse only) ---------- */
   if (!reduced && matchMedia("(pointer: fine)").matches) {
     const poster = $("#poster"), glow = $("#glow");
+    // One style write per frame, however fast the mouse moves.
+    let px = 0, py = 0, gx = 0, gy = 0, overPoster = false, queued = false;
+    const paint = () => {
+      queued = false;
+      glow.style.transform = `translate3d(${gx - 260}px, ${gy - 260}px, 0)`;
+      if (overPoster) {
+        poster.style.transform = `rotateY(${(px - .5) * 12}deg) rotateX(${(.5 - py) * 10}deg)`;
+        poster.style.setProperty("--mx", px * 100 + "%");
+        poster.style.setProperty("--my", py * 100 + "%");
+      }
+    };
+    const queue = () => { if (!queued) { queued = true; requestAnimationFrame(paint); } };
     poster.addEventListener("pointermove", e => {
       const r = poster.getBoundingClientRect();
-      const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
-      poster.style.transform = `rotateY(${(x - .5) * 12}deg) rotateX(${(.5 - y) * 10}deg)`;
-      poster.style.setProperty("--mx", x * 100 + "%");
-      poster.style.setProperty("--my", y * 100 + "%");
+      px = (e.clientX - r.left) / r.width; py = (e.clientY - r.top) / r.height;
+      overPoster = true; queue();
     });
-    poster.addEventListener("pointerleave", () => { poster.style.transform = ""; });
+    poster.addEventListener("pointerleave", () => { overPoster = false; poster.style.transform = ""; });
     addEventListener("pointermove", e => {
       glow.classList.add("on");
-      glow.style.transform = `translate3d(${e.clientX - 260}px, ${e.clientY - 260}px, 0)`;
+      gx = e.clientX; gy = e.clientY; queue();
     }, { passive: true });
   }
 
